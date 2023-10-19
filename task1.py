@@ -9,8 +9,15 @@ Example:
 assert find('apple') == 0
 assert find('fish') == 5
 '''
+filename = 'task01.txt'
+file = open(filename,'r')
+data = file.read()
+print(data)
+data = data.split('\n')
 def find(needle):
-    pass
+    for i in data:
+        if i == needle:
+            return data.index(needle)
 
 
 if __name__ == "__main__":
