@@ -24,9 +24,7 @@ for i in data:
         j = int(j)
         num+=j
     poo.append(num)
-print(poo)
 num1 = 0
 for i in poo:
-    if i > num1:
-        num1 = i
+    if i > num1:num1 = i
 print(num1)
